@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-[32px] font-bold;
+  }
+  h2 {
+    @apply text-[24px] font-bold;
+  }
+  body {
+    @apply bg-[rgb(10,10,10)] text-white;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-white text-gray-900 rounded-xl px-6 py-3;
+  }
+
+  .flex-row {
+    @apply flex justify-evenly items-center;
+  }
+
+  .formContainer {
+    @apply rounded-xl border-2 border-white mx-auto p-6 flex flex-col items-center gap-4 max-w-[450px] sm:min-w-[500px];
+  }
+  .inputFieldStyle {
+    @apply bg-[rgba(10,10,10,0)] p-2 border-2 border-white rounded-lg mb-4;
+  }
+}
+
+@layer utilities {
+  .layout {
+    @apply /*lg:px-40 lg:py-6*/ flex flex-col items-center p-5 min-h-[100vh]  /*sm:px-10 sm:py-2 */;
+  }
+
+  .sectionContainer {
+    @apply border-2 border-gray-600  p-5 rounded-xl;
+  }
+}
